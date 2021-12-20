@@ -1,0 +1,158 @@
+$color-cam: #ff4917;
+@charset "UTF-8";
+@font-face {
+    font-family: "Segoe UI Semibold";
+    src: url("../font/Segoe UI Semibold.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Segoe UI Bold Italic";
+    src: url("../font/Segoe UI Bold Italic.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../font/Segoe UI Bold.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Segoe UI Italic";
+    src: url("../font/Segoe UI Italic.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Segoe UI, Regular";
+    src: url("../font/Segoe UI, Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../font/Segoe UI.ttf");
+    font-display: swap;
+}
+body,
+html {
+    font-family: "Segoe UI";
+    color: #363636;
+}
+a {
+    color: #363636;
+}
+.text-menu_15 {
+    font-family: "Segoe UI, Regular";
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-title_25 {
+    font-family: "Segoe UI Bold";
+    line-height: 33px;
+    color: $color-cam;
+    font-size: 25px;
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        background-color: $color-cam;
+        width: 69px;
+        height: 4px;
+        border-radius: 2px;
+    }
+}
+.title {
+    &_45 {
+        font: normal normal bold 45px/60px "Segoe UI Bold";
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+    }
+    &_20 {
+        font-family: "Segoe UI Semibold";
+        font-size: 20px;
+        color: $color-cam;
+    }
+    &_15 {
+        text-align: left;
+        font: normal normal bold 15px/20px "Segoe UI Bold";
+        letter-spacing: 0px;
+        color: #ff4917;
+        opacity: 1;
+        text-transform: uppercase;
+    }
+    &_35 {
+        text-align: left;
+        font: normal normal bold 35px/47px "Segoe UI Bold";
+        letter-spacing: 0px;
+        color: #363636;
+        opacity: 1;
+        text-transform: uppercase;
+    }
+}
+.content {
+    &_12 {
+        font-family: "Segoe UI, Regular";
+        font-size: 12px;
+        color: #404040;
+        font-weight: normal;
+    }
+    &_15 {
+        font-family: "Segoe UI, Regular";
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+}
+@media (max-width: 1200px) {
+    .text-menu_15 {
+    }
+    .footer-title_25 {
+    }
+    .title {
+        &_20 {
+        }
+    }
+    .content {
+        &_12 {
+        }
+        &_15 {
+            font-size: 13px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .text-menu_15 {
+    }
+    .footer-title_25 {
+        font-size: 14px;
+    }
+    .title {
+        &_20 {
+        }
+    }
+    .content {
+        &_12 {
+        }
+        &_15 {
+            //    font-size: 13px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .text-menu_15 {
+    }
+    .footer-title_25 {
+    }
+    .title {
+        &_20 {
+        }
+    }
+    .content {
+        &_12 {
+        }
+        &_15 {
+        }
+    }
+}
